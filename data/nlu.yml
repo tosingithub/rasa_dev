@@ -6,87 +6,93 @@ nlu:
     - hey
     - hello
     - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - hallå
+    - god morgon
+    - god kväll
+    - hejsan
+    - hej
+    - hej hej
+    - godmorgon
+    - godkväll
+    - god dag
+    - hej vän
 
 - intent: goodbye
   examples: |
-    - good afternoon
+    - hej då
     - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - adjö
+    - vi ses snart
+    - vi ses igen
+    - vi ses
+    - ha det bra
+    - god natt
+    - vi hörs
+    - tack för allt
+    - vi hörs snart
 
 - intent: affirm
   examples: |
     - yes
     - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - ja
+    - precis
+    - självklart
+    - jag förstår
+    - den är bra
 
 - intent: deny
   examples: |
     - no
     - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - nej
+    - alldrig
+    - jag tänker inte så
+    - jag gillar inte det
+    - inte alls
+    - ej
+    - inte
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - perfekt
+    - bra
+    - mycket bra
+    - känner som en kung
+    - underbar
+    - jag känner mycket bra
+    - jag är bra
+    - jag är underbar
+    - fantastik
+    - väldigt bra
+    - så perfekt
+    - så bra
+    - jag mår bra
+    - det är bra
+    - det är kul
+    - kul
+    - jättebra
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - mitt dag var dålig
+    - jag är olycklig
+    - jag känner inte så bra
+    - jättedåliga
+    - jag är så olycklig
+    - olycklig
+    - väldigt olycklig
+    - inte bra
+    - inte mycket bra
+    - så olycklig
+    - dålig
+    - det är inte bra
+    - dålig dag
+    - det är en dålig dag
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - är du människa?
+    - är du en bot?
+    - tala jag med en bot?
+    - tala jag med en människa?
