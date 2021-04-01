@@ -1,0 +1,38 @@
+version: "2.0"
+stories:
+- story: sad path 1 (/tmp/tmpmp193qqk/dbb0431376b14ddd96404b25afc12fd0_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: deny: not good
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2 (/tmp/tmpmp193qqk/dbb0431376b14ddd96404b25afc12fd0_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: deny: not good
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: say goodbye (/tmp/tmpmp193qqk/dbb0431376b14ddd96404b25afc12fd0_test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: affirm: bye-bye!
+  - action: utter_goodbye
+- story: happy path 1 (/tmp/tmpmp193qqk/dd6fa1fb6f8340eca96b2122a2e9a2f1_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great  # predicted: deny: amazing
+  - action: utter_happy
+- story: happy path 2 (/tmp/tmpmp193qqk/dd6fa1fb6f8340eca96b2122a2e9a2f1_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great  # predicted: deny: amazing
+  - action: utter_happy
+  - intent: goodbye  # predicted: affirm: bye-bye!
+  - action: utter_goodbye
