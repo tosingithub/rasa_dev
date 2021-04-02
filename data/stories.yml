@@ -2,12 +2,27 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: happy path 1
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
+  - action: utter_implementation
+  - intent: strategi
+  - action: utter_strategi
+  - intent: ideer
+  - action: utter_ideer
+  - intent: budget
+  - action: utter_budget
+  - intent: kompetens
+  - action: utter_kompetens
+  - intent: data
+  - action: utter_data
+  - intent: tekniska
+  - action: utter_tekniska
+  - intent: finaltek
+  - action: utter_assessment
 
 - story: sad path 1
   steps:

@@ -1,0 +1,26 @@
+[
+  {
+    "text": "ja",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "tekniska",
+      "confidence": 0.4490983784198761
+    }
+  },
+  {
+    "text": "Nej.",
+    "intent": "kompetens",
+    "intent_prediction": {
+      "name": "tekniska",
+      "confidence": 0.4637047350406647
+    }
+  },
+  {
+    "text": "Ja",
+    "intent": "tekniska",
+    "intent_prediction": {
+      "name": "kompetens",
+      "confidence": 0.4832935631275177
+    }
+  }
+]

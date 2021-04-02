@@ -72,6 +72,7 @@ nlu:
     - det är kul
     - kul
     - jättebra
+    - Jag heter
 
 - intent: mood_unhappy
   examples: |
@@ -96,3 +97,173 @@ nlu:
     - är du en bot?
     - tala jag med en bot?
     - tala jag med en människa?
+
+# NEW INTENTS DEFINED:
+# This intent is not needed to be defined because it fires immediately after "utter_happy" of intent "mood_great"
+#- intent: implementation
+#  examples: |
+#    - vad är AI?
+
+# Now, use user-responses to previous question (implementation - in this case) to trigger the next intent (strategi - in this case)
+# 1-9= 0;1,2,3,4,5
+- intent: strategi
+  examples: |
+    - Vi planerar inte att genomföra projekt.
+    - Vi har inga planer på att arbeta med AI.
+    - Vi kommer inte arbeta med AI.
+    - Vi kommer inte arbeta med AI den närmaste tiden.
+    - Vi har inte tid att arbeta med AI.
+    - Vi har inga projekt planerade.
+    - Vi lägger ingen tid på AI.
+    - Vi vill inte genomföra något.
+    - Nej, vi kommer inte göra något.
+    - Vi experimenterar med AI i organisationen.
+    - Vi har testat AI.
+    - Vi har experimenterat med AI.
+    - Vi har prövat AI.
+    - Vi utforskar AI.
+    - Vi har laborerat med en idé.
+    - Vi planerar för att genomföra ett pilotprojekt.
+    - Vi har ett projekt på gång.
+    - Vi ska starta upp ett projekt.
+    - Det finns ett projekt som ska starta.
+    - Vi vill gärna genomföra ett projekt.
+    - Vi planerar för att genomföra ett pilotprojekt med en annan samarbetspartner.
+    - Vi genomför/har genomfört ett pilotprojekt.
+    - Vi har startat ett projekt.
+    - Vi har avslutat ett projekt.
+    - Vi har nyligen avslutat ett projekt.
+    - Vi håller på med ett projekt.
+    - Vi blev just klara med ett projekt.
+    - Vi har implementerat och har AI-teknik vår verksamhet.
+    - Vi har en AI.
+    - Vi har en ML-modell.
+    - Vi kör en AI i produktion.
+    - Det finns en AI i vår verksamhet.
+    - Vi har en AI i vår verksamhet.
+    - Vi arbetar idag med AI i flera delar av vår verksamhet.
+    - Vi har flertalet AI i verksamheten.
+    - Vi har flera ML-modeller i igång.
+    - Vi har många AI i igång.
+    - AI finns på många ställen i verksamheten.
+    - AI är integrerat i flera delar av verksamheten.
+
+
+- intent: ideer
+  examples: |
+    - Vi har ingen strategi.
+    - Nej, vi har ingen strategi.
+    - Nej, det saknas strategi.
+    - Nej, vi saknar strategi.
+    - Det finns ingen strategi.
+    - Vi har ingen plan för hur vi ska arbeta med AI.
+    - Vi håller på att ta fram en strategi
+    - Vi jobbar med en strategi.
+    - Vi håller på att utveckla en strategi.
+    - Vi tar fram en strategi.
+    - Vi håller på att planera för hur vi vill arbeta med AI.
+    - Ja, vi har en strategi.
+    - Det finns en strategi.
+    - Vi har tagit fram en strategi.
+    - Vi har en plan för hur vi ska arbeta med AI.
+    - Det finns en plan.
+    - AI är införlivat i organisationens strategi.
+    - Vi har med AI i vår strategi.
+    - AI finns i vår strategi.
+    - Vi tar upp AI i vår strategi.
+    - Vi tar upp AI i vår verksamhetsplan.
+
+
+- intent: budget
+  examples: |
+    - Vi har inga idéer om hur vi kan arbeta med AI i verksamheten för att leverera affärsnytta.
+    - Vi har inte kommit på några idéer.
+    - Vi vet inte hur vi kan arbeta med AI i vår verksamhet.
+    - Vi förstår inte hur AI kan ge oss fördelar.
+    - Vi förstår inte hur AI kan leverera affärsnytta.
+    - Vi tror inte AI kan hjälpa oss i vår verksamhet.
+    - Vi har några men få idéer om hur vi kan arbeta med AI i verksamheten.
+    - Vi har en idé för hur vi kan arbeta med AI i verksamheten.
+    - Vi har kommit på några få idéer.
+    - Vi har få idéer.
+    - Vi har inte så många idéer.
+    - Det finns ett fåtal idéer.
+    - Vi har idéer om hur vi kan arbeta med AI.
+    - Vi vet hur vi kan arbeta med AI.
+    - Vi har kommit på en rad idéer som vi kan arbeta med.
+    - Det finns en rad idéer som vi har kommit på.
+    - Vi har ett antal idéer.
+    - Vi vet hur AI kan hjälpa oss i vår verksamhet.
+    - Vi har många idéer och arbetar aktivt med att ta fram nya sätt att använda AI i verksamheten.
+    - Vi har massor av idéer.
+    - Vi har kommit på många saker vi vill göra med AI.
+    - Det finns flera idéer som vi arbetar med.
+    - Hur många idéer som helst.
+    - Vi har ett stort antal idéer.
+
+- intent: kompetens
+  examples: |
+    - Vi har ingen budget.
+    - Vi saknar budget.
+    - Det finns inga pengar för AI.
+    - Det finns inga resurser till AI.
+    - Vi har planerat att budgetera för AI.
+    - Vi kommer att ha budget för AI.
+    - Vi ska avsätta pengar för AI.
+    - Det kommer finnas pengar till AI.
+    - Det kommer finnas budget för AI.
+    - Det kommer finnas resurser till AI.
+    - Vi har budgeterat för AI.
+    - Vi har en budget.
+    - Det finns pengar till AI
+    - Vi har medel för att arbeta med AI.
+    - Vi har avsatt pengar för AI.
+    - Vi har avsatt medel för AI.
+    - Vi har resurser till AI.
+
+- intent: data
+  examples: |
+    - Vi har ingen kompetens.
+    - Vi saknar kompetens.
+    - Det finns ingen kompetens i vår organisation.
+    - Det finns ingen kompetens i vår verksamhet.
+    - Det finns ingen som kan något om AI i vår verksamhet.
+    - Ingen.
+    - Saknas.
+    - Vi har begränsad kompetens.
+    - Det finns några få som kan AI.
+    - Ett par stycken kan AI.
+    - Ett fåtal.
+    - Väldigt få.
+    - Det finns knappt någon som kan AI.
+    - Vi har kompetens.
+    - Det finns personer med kompetens när det gäller AI.
+    - Vi har personer som kan arbeta med AI.
+    - Vi har anställda som kan arbeta med AI.
+    - Vi har stor kompetens.
+    - Vi har många medarbetare som kan AI.
+    - Det finns ett flertal hos oss som är bra på AI.
+    - Många.
+    - Mycket.
+
+- intent: tekniska
+  examples: |
+    - Ja, vi kan.
+    - Nej, vi använda inte.
+
+- intent: finaltek
+  examples: |
+    - Vi har ingen teknik för att nyttja AI.
+    - Nej vi har inga program för att arbeta med AI.
+    - Det finns ingen teknik i vår verksamhet för att arbeta med AI.
+    - Vi saknar program för att arbeta med AI.
+    - Vi har viss teknik för att nyttja AI.
+    - Vi har några program/applikationer för att arbeta med AI.
+    - Vi har en låg grad av verktyg för att arbeta med AI.
+    - Vi har tillgång till teknik för AI via partners/leverantörer.
+    - Vi har leverantörer som erbjuder teknik.
+    - Vår leverantör har programvaror för detta.
+    - Vi har tillgång till Azure.
+    - Vi har teknik internt inom organisationen för att nyttja AI.
+    - Vi har teknik i företaget för att köra AI.
+    - Vi har teknik i företaget för att köra ML.
