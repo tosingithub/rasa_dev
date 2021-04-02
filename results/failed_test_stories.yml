@@ -1,38 +1,95 @@
 version: "2.0"
 stories:
-- story: sad path 1 (/tmp/tmpmp193qqk/dbb0431376b14ddd96404b25afc12fd0_test_stories.yml)
+- story: sad path 1 (/tmp/tmproqxzt95/6c66ddac5cb640aa9c6cefb3122c7646_test_stories.yml)
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy  # predicted: deny: not good
+  - intent: mood_unhappy  # predicted: nlu_fallback: not good
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-- story: sad path 2 (/tmp/tmpmp193qqk/dbb0431376b14ddd96404b25afc12fd0_test_stories.yml)
+- story: sad path 2 (/tmp/tmproqxzt95/6c66ddac5cb640aa9c6cefb3122c7646_test_stories.yml)
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy  # predicted: deny: not good
+  - intent: mood_unhappy  # predicted: nlu_fallback: not good
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
-- story: say goodbye (/tmp/tmpmp193qqk/dbb0431376b14ddd96404b25afc12fd0_test_stories.yml)
+- story: sad path 3 (/tmp/tmproqxzt95/6c66ddac5cb640aa9c6cefb3122c7646_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: nlu_fallback: very terrible
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: say goodbye (/tmp/tmproqxzt95/6c66ddac5cb640aa9c6cefb3122c7646_test_stories.yml)
   steps:
   - intent: goodbye  # predicted: affirm: bye-bye!
   - action: utter_goodbye
-- story: happy path 1 (/tmp/tmpmp193qqk/dd6fa1fb6f8340eca96b2122a2e9a2f1_test_stories.yml)
+- story: happy path 1 (/tmp/tmproqxzt95/93edfff37b03477e9a34f8bb42cfb25a_test_stories.yml)
+  steps:
+  - user: |-
+      god morgon
+  - intent: greet
+  - action: utter_greet
+  - user: |-
+      känner som en kung
+  - action: action_listen  # predicted: utter_did_that_help
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_implementation
+  - user: |-
+      Vi planerar inte att genomföra projekt.
+  - intent: strategi
+  - action: utter_strategi  # predicted: action_default_fallback
+  - user: |-
+      Vi har ingen strategi.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: ideer
+  - action: utter_ideer  # predicted: action_default_fallback
+  - user: |-
+      Vi har inte kommit på några idéer.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: budget
+  - action: utter_budget  # predicted: action_default_fallback
+  - user: |-
+      Vi har ingen budget.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: kompetens
+  - action: utter_kompetens
+  - user: |-
+      Vi har ingen kompetens.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: data
+  - action: utter_data  # predicted: action_default_fallback
+  - user: |-
+      Nej, vi använda inte.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: tekniska
+  - action: utter_tekniska  # predicted: action_default_fallback
+  - user: |-
+      Vi har ingen teknik för att nyttja AI.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: finaltek
+  - action: utter_assessment  # predicted: action_default_fallback
+- story: happy path 1 (/tmp/tmproqxzt95/4115b2ad59824e3aac7d7d91896b22b5_test_stories.yml)
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great  # predicted: deny: amazing
   - action: utter_happy
-- story: happy path 2 (/tmp/tmpmp193qqk/dd6fa1fb6f8340eca96b2122a2e9a2f1_test_stories.yml)
+  - action: action_listen  # predicted: utter_implementation
+- story: happy path 2 (/tmp/tmproqxzt95/4115b2ad59824e3aac7d7d91896b22b5_test_stories.yml)
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great  # predicted: deny: amazing
   - action: utter_happy
+  - action: action_listen  # predicted: utter_implementation
   - intent: goodbye  # predicted: affirm: bye-bye!
   - action: utter_goodbye

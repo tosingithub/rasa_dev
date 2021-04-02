@@ -5,87 +5,101 @@ stories:
 - story: happy path 1
   steps:
   - user: |
-      hello there!
-    intent: greet
+     god morgon
+  - intent: greet
   - action: utter_greet
   - user: |
-      amazing
-    intent: mood_great
+     känner som en kung
+  - intent: mood_great
   - action: utter_happy
-
-- story: happy path 2
-  steps:
+  - action: utter_implementation
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+     Vi planerar inte att genomföra projekt.
+  - intent: strategi
+  - action: utter_strategi
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+     Vi har ingen strategi.
+  - intent: ideer
+  - action: utter_ideer
   - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+     Vi har inte kommit på några idéer.
+  - intent: budget
+  - action: utter_budget
+  - user: |
+     Vi har ingen budget.
+  - intent: kompetens
+  - action: utter_kompetens
+  - user: |
+     Vi har ingen kompetens.
+  - intent: data
+  - action: utter_data
+  - user: |
+     Nej, vi använda inte.
+  - intent: tekniska
+  - action: utter_tekniska
+  - user: |
+     Vi har ingen teknik för att nyttja AI.
+  - intent: finaltek
+  - action: utter_assessment 
 
 - story: sad path 1
   steps:
   - user: |
-      hello
+      hallå
     intent: greet
   - action: utter_greet
   - user: |
-      not good
+      inte bra
     intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      yes
+      ja
     intent: affirm
   - action: utter_happy
 
 - story: sad path 2
   steps:
   - user: |
-      hello
+      hej
     intent: greet
   - action: utter_greet
   - user: |
-      not good
+      inte bra
     intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      not really
+      jag tänker inte så
     intent: deny
   - action: utter_goodbye
 
 - story: sad path 3
   steps:
   - user: |
-      hi
+      god morgon
     intent: greet
   - action: utter_greet
   - user: |
-      very terrible
+      jag är olycklig
     intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      no
+      nej
     intent: deny
   - action: utter_goodbye
 
 - story: say goodbye
   steps:
   - user: |
-      bye-bye!
+      hej då
     intent: goodbye
   - action: utter_goodbye
 
 - story: bot challenge
   steps:
   - user: |
-      are you a bot?
+      tala jag med en bot?
     intent: bot_challenge
   - action: utter_iamabot

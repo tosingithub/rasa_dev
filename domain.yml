@@ -8,27 +8,73 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  #- ai_strategy_stage1
+  - implementation
+  - strategi
+  - ideer
+  - budget
+  - kompetens
+  - data
+  - tekniska
+  - finaltek
 
 responses:
   utter_greet:
   - text: "Hej! Jag heter AIA. Hur mår du idag?"
+  - text: "Hej! Jag heter AIA. Vad heter du?"
+  # - text: "Hej! Jag heter AIA."
 
   utter_cheer_up:
   - text: "Här ett nåt att hjälpa dig:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "här ett nåt att hjälpa till:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
   - text: "Hjälpte det?"
 
   utter_happy:
+  - text: "Vad kul att du mår bra."
   - text: "Vad kul."
+  - text: "Jag tänkte fråga dig om vad du tänker att AI är för något?"
+  - text: "Jag skulle vilja prata med dig om mognaden i ert företag vad gäller AI."
+  - text: "Jag kommer ställa några frågor som du får besvara och sedan kommer du att få återkoppling baserat på dina svar."
   
   utter_goodbye:
   - text: "Tack. Hej då"
+  - text: "Hej då"
+  - text: "Adjö"
 
   utter_iamabot:
   - text: "Jag är AIA bot."
+
+  utter_implementation:
+  - text: "Hur långt bedömer du att er organisation kommit i arbetet med att implementera och arbeta med AI-teknik?"
+
+  utter_strategi:
+  - text: "Har ni idag en strategi eller plan för hur ni vill utveckla verksamheten med AI?"
+
+  utter_ideer:
+  - text: "Har ni idéer om hur ni kan arbeta med AI för att hjälpa er/bidra till nytta i er verksamhet?"
+
+  utter_budget:
+  - text: "Har ni budget"
+
+  utter_kompetens:
+  - text: "På vilken nivå finns det teknisk kompetens att arbeta med AI i er verksamhet?"
+  - text: "Har ni roller relaterade till AI i er organisation?"
+
+  utter_data:
+  - text: "Sparar ni data över vad ni och era kunder gör kontinuerligt, som kan användas för AI?"
+  - text: Kan ni dela/hämta data från olika delar (CRM, produktionssystem osv.) av verksamheten för att exempelvis användas till ML. 
+  - text: Har ni kompetens för att kunna säkerställa kvalité eller tvätta och strukturera data?
+  - text: Använder ni enhetliga strukturer  för data i olika delar av verksamheten så de enklare kan samköras för att hitta insikter?
+  - text: Finns det automatiserade processer att bearbeta data så de kan användas för AI?
+
+  utter_tekniska:
+  - text: "Till vilken grad har ni tekniska förutsättning för att arbeta med AI? Har ni dessa internt eller exempelvis via leverantörer/partners? Har ni exempelvis verktyg för att arbeta med ML?"
+
+  utter_assessment:
+  - text: "Ni är 3.0 redo!"
 
 session_config:
   session_expiration_time: 60
