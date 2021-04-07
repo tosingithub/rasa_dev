@@ -17,6 +17,16 @@ intents:
   - tekniska
   - finaltek
 
+actions:
+  - action_hello_world
+
+slots:
+  scoreval:
+    type: text
+    initial_value: "2.0"
+    influence_conversation: false
+    #min_value: 1.0
+
 responses:
   utter_greet:
   - text: "Hej! Jag heter AIA. Hur mår du idag?"
