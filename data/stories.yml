@@ -5,6 +5,8 @@ stories:
 - story: happy path 1
   steps:
   - intent: greet
+    entities:
+    - name: scoreval
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
@@ -23,6 +25,8 @@ stories:
   - action: utter_tekniska
   - intent: finaltek
   - action: utter_assessment
+  - action: action_hello_world
+
 
 - story: sad path 1
   steps:
