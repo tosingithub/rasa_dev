@@ -8,7 +8,6 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - implementation
   - strategi
   - ideer
   - budget
@@ -84,7 +83,7 @@ responses:
   - text: "Till vilken grad har ni tekniska förutsättning för att arbeta med AI? Har ni dessa internt eller exempelvis via leverantörer/partners? Har ni exempelvis verktyg för att arbeta med ML?"
 
   utter_assessment:
-  - text: "Ni är 3.0 redo!"
+  - text: "Ni är {scoreval} redo!"
 
 session_config:
   session_expiration_time: 60
