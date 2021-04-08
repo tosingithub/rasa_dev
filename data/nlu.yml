@@ -72,7 +72,7 @@ nlu:
     - det är kul
     - kul
     - jättebra
-    - Jag heter
+    - jag heter
 
 - intent: mood_unhappy
   examples: |

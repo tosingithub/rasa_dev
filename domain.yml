@@ -27,9 +27,15 @@ slots:
     #min_value: 1.0
 
 responses:
+  utter_ask_rephrase:
+  - text: "Ursäkta, snälla omformulera eller svara på den sista frågan?"
+
+  #utter_default:
+  #- text: "Sorry I didn't get that. Please, rephrase."
+
   utter_greet:
   - text: "Hej! Jag heter AIA. Hur mår du idag?"
-  - text: "Hej! Jag heter AIA."
+  - text: "Hej! Jag heter AIA. Hur mår du?"
 
   utter_cheer_up:
   - text: "Här ett nåt att hjälpa dig:"
