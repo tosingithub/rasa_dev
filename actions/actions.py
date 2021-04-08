@@ -16,14 +16,12 @@ from rasa_sdk.events import SlotSet
 #
 class ActionHelloWorld(Action):
 #
-    def name(self) -> Text:
+    def name(self): # -> Text:
         return "action_hello_world"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    def run(self, dispatcher, tracker, domain): #: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         #scoreval = tracker.get_slot("scoreval")
-        dispatcher.utter_message(text="Thank you! Your score")
+        dispatcher.utter_message(text="Här är vårt råd: ")
 
         return []
