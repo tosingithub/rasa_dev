@@ -25,27 +25,6 @@ stories:
   - action: utter_assessment
   - action: action_hello_world
 
-  - story: happy path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_implementation
-  - intent: strategi
-  - action: utter_strategi
-  - intent: ideer
-  - action: utter_ideer
-  - intent: budget
-  - action: utter_budget
-  - intent: kompetens
-  - action: utter_kompetens
-  - intent: data
-  - action: utter_data
-  - intent: tekniska
-  - action: utter_tekniska
-  - intent: finaltek
-  - action: utter_assessment
-  - action: action_hello_world
-
 - story: sad path 1
   steps:
   - intent: greet
