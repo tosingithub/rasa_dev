@@ -5,8 +5,6 @@ stories:
 - story: happy path 1
   steps:
   - intent: greet
-    entities:
-    - name: scoreval
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy

@@ -23,7 +23,7 @@ class ActionHelloWorld(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        scoreval = tracker.get_slot("scoreval")
-        dispatcher.utter_message(text="Thank you! Your score = {}".format(scoreval))
+        #scoreval = tracker.get_slot("scoreval")
+        dispatcher.utter_message(text="Thank you! Your score")
 
         return []
