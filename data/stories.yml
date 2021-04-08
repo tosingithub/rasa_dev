@@ -25,6 +25,13 @@ stories:
   - action: utter_assessment
   - action: action_hello_world
 
+- story: happy path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: finaltek
+  - action: utter_assessment
+  - action: action_hello_world
 
 - story: sad path 1
   steps:

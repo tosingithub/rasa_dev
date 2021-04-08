@@ -29,8 +29,7 @@ slots:
 responses:
   utter_greet:
   - text: "Hej! Jag heter AIA. Hur mår du idag?"
-  - text: "Hej! Jag heter AIA. Vad heter du?"
-  # - text: "Hej! Jag heter AIA."
+  - text: "Hej! Jag heter AIA."
 
   utter_cheer_up:
   - text: "Här ett nåt att hjälpa dig:"
