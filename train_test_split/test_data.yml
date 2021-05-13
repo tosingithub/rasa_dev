@@ -1,0 +1,75 @@
+version: "2.0"
+nlu:
+- intent: bot_challenge
+  examples: |
+    - är du en bot?
+- intent: affirm
+  examples: |
+    - den är bra
+    - ja
+- intent: deny
+  examples: |
+    - jag gillar inte det
+- intent: tekniska
+  examples: |
+    - Nej, vi sparar inte data.
+    - Nej, vi använder inte det.
+- intent: goodbye
+  examples: |
+    - tack för allt
+    - hej då
+    - adjö
+- intent: greet
+  examples: |
+    - godkväll
+    - hej
+- intent: mood_unhappy
+  examples: |
+    - jag är så olycklig
+    - jag är olycklig
+    - det är en dålig dag
+- intent: finaltek
+  examples: |
+    - Vi har teknik i företaget för att köra AI.
+    - Vi har några program/applikationer för att arbeta med AI.
+    - Vi har teknik i företaget för att köra ML.
+- intent: kompetens
+  examples: |
+    - Vi har ingen budget.
+    - Det finns pengar till AI
+    - Det finns inga pengar för AI.
+- intent: mood_great
+  examples: |
+    - så bra
+    - underbar
+    - kul
+    - känner som en kung
+- intent: ideer
+  examples: |
+    - Nej, vi saknar strategi.
+    - Det finns en plan.
+    - Vi har ingen plan för hur vi ska arbeta med AI.
+    - AI finns i vår strategi.
+- intent: data
+  examples: |
+    - Det finns några få som kan AI.
+    - Vi har personer som kan arbeta med AI.
+    - Det finns ett flertal hos oss som är bra på AI.
+    - Många.
+- intent: budget
+  examples: |
+    - Vi tror inte AI kan hjälpa oss i vår verksamhet.
+    - Vi har massor av idéer.
+    - Vi har inte kommit på några idéer.
+    - Det finns en rad idéer som vi har kommit på.
+    - Det finns ett fåtal idéer.
+- intent: strategi
+  examples: |
+    - Vi arbetar idag med AI i flera delar av vår verksamhet.
+    - Vi vill inte genomföra något.
+    - Vi har flera ML-modeller i igång.
+    - Vi planerar inte att genomföra projekt.
+    - Vi utforskar AI.
+    - Det finns en AI i vår verksamhet.
+    - Vi har testat AI.
+    - Vi har prövat AI.
