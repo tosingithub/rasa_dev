@@ -1,22 +1,6 @@
 version: "2.0"
 stories:
-- story: happy path 1 (/tmp/tmp9wmddrea/fc534ede51b6414c9822d81e5c8849cc_test_stories.yml)
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great  # predicted: goodbye: amazing
-  - action: utter_happy
-  - action: action_listen  # predicted: utter_implementation
-- story: happy path 2 (/tmp/tmp9wmddrea/fc534ede51b6414c9822d81e5c8849cc_test_stories.yml)
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great  # predicted: goodbye: amazing
-  - action: utter_happy
-  - action: action_listen  # predicted: utter_implementation
-  - intent: goodbye  # predicted: mood_great: bye-bye!
-  - action: utter_goodbye
-- story: sad path 1 (/tmp/tmp9wmddrea/fc534ede51b6414c9822d81e5c8849cc_test_stories.yml)
+- story: sad path 1 (/tmp/tmpr0nh1sx_/625de6e81d684eddb4224fae9ec33bc0_test_stories.yml)
   steps:
   - intent: greet
   - action: utter_greet
@@ -25,16 +9,16 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-- story: sad path 2 (/tmp/tmp9wmddrea/fc534ede51b6414c9822d81e5c8849cc_test_stories.yml)
+- story: sad path 2 (/tmp/tmpr0nh1sx_/625de6e81d684eddb4224fae9ec33bc0_test_stories.yml)
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_unhappy  # predicted: greet: not good
   - action: utter_cheer_up
   - action: utter_did_that_help
-  - intent: deny
+  - intent: deny  # predicted: nlu_fallback: not really
   - action: utter_goodbye
-- story: sad path 3 (/tmp/tmp9wmddrea/fc534ede51b6414c9822d81e5c8849cc_test_stories.yml)
+- story: sad path 3 (/tmp/tmpr0nh1sx_/625de6e81d684eddb4224fae9ec33bc0_test_stories.yml)
   steps:
   - intent: greet
   - action: utter_greet
@@ -43,27 +27,28 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
-- story: say goodbye (/tmp/tmp9wmddrea/fc534ede51b6414c9822d81e5c8849cc_test_stories.yml)
+- story: say goodbye (/tmp/tmpr0nh1sx_/625de6e81d684eddb4224fae9ec33bc0_test_stories.yml)
   steps:
-  - intent: goodbye  # predicted: mood_great: bye-bye!
+  - intent: goodbye  # predicted: affirm: bye-bye!
   - action: utter_goodbye
-- story: happy path 1 (/tmp/tmp9wmddrea/29cce880e3904a55a2d6bd6845a208b3_test_stories.yml)
+- story: happy path 1 (/tmp/tmpr0nh1sx_/f8997c4c44fe43a499cec4ce02658898_test_stories.yml)
   steps:
   - user: |-
       god morgon
+  - action: action_listen  # predicted: action_default_fallback
   - intent: greet
-  - action: utter_greet  # predicted: action_default_fallback
+  - action: utter_greet
   - user: |-
       känner som en kung
   - action: action_listen  # predicted: action_default_fallback
   - intent: mood_great
   - action: utter_happy
-  - action: utter_implementation  # predicted: action_default_fallback
+  - action: utter_implementation
   - user: |-
       Vi planerar inte att genomföra projekt.
   - action: action_listen  # predicted: action_default_fallback
   - intent: strategi
-  - action: utter_strategi  # predicted: action_default_fallback
+  - action: utter_strategi
   - user: |-
       Vi har ingen strategi.
   - action: action_listen  # predicted: action_default_fallback
@@ -71,22 +56,43 @@ stories:
   - action: utter_ideer  # predicted: action_default_fallback
   - user: |-
       Vi har inte kommit på några idéer.
+  - action: action_listen  # predicted: action_default_fallback
   - intent: budget
   - action: utter_budget  # predicted: action_default_fallback
   - user: |-
       Vi har ingen budget.
+  - action: action_listen  # predicted: action_default_fallback
   - intent: kompetens
   - action: utter_kompetens  # predicted: action_default_fallback
   - user: |-
       Vi har ingen kompetens.
+  - action: action_listen  # predicted: action_default_fallback
   - intent: data
   - action: utter_data  # predicted: action_default_fallback
   - user: |-
       Nej, vi använda inte.
+  - action: action_listen  # predicted: action_default_fallback
   - intent: tekniska
   - action: utter_tekniska  # predicted: action_default_fallback
   - user: |-
       Vi har ingen teknik för att nyttja AI.
+  - action: action_listen  # predicted: action_default_fallback
   - intent: finaltek
   - action: utter_assessment  # predicted: action_default_fallback
-  - action: action_listen  # predicted: utter_did_that_help
+  - action: action_listen  # predicted: action_default_fallback
+- story: happy path 1 (/tmp/tmpr0nh1sx_/485e459aba3c4ebc8b64919d4adb6a00_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great  # predicted: deny: amazing
+  - action: utter_happy
+  - action: action_listen  # predicted: utter_implementation
+- story: happy path 2 (/tmp/tmpr0nh1sx_/485e459aba3c4ebc8b64919d4adb6a00_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great  # predicted: deny: amazing
+  - action: utter_happy
+  - action: action_listen  # predicted: utter_implementation
+  - intent: goodbye  # predicted: affirm: bye-bye!
+  - action: utter_goodbye

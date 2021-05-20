@@ -1,26 +1,322 @@
 [
   {
+    "text": "god dag",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.7758982181549072
+    }
+  },
+  {
+    "text": "adj\u00f6",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4023721218109131
+    }
+  },
+  {
+    "text": "precis",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.37905991077423096
+    }
+  },
+  {
+    "text": "den \u00e4r bra",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9738488793373108
+    }
+  },
+  {
+    "text": "v\u00e4ldigt bra",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.7694545984268188
+    }
+  },
+  {
+    "text": "jag k\u00e4nner inte s\u00e5 bra",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.7206920385360718
+    }
+  },
+  {
+    "text": "V\u00e4ldigt f\u00e5.",
+    "intent": "data",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.9091486930847168
+    }
+  },
+  {
+    "text": "sj\u00e4lvklart",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8800421953201294
+    }
+  },
+  {
+    "text": "jag t\u00e4nker inte s\u00e5",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.9192444086074829
+    }
+  },
+  {
+    "text": "ej",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5015808343887329
+    }
+  },
+  {
+    "text": "perfekt",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "strategi",
+      "confidence": 0.9833539724349976
+    }
+  },
+  {
+    "text": "s\u00e5 perfekt",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "strategi",
+      "confidence": 0.962468683719635
+    }
+  },
+  {
+    "text": "inte mycket bra",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9749370217323303
+    }
+  },
+  {
+    "text": "Vi h\u00e5ller p\u00e5 att planera f\u00f6r hur vi vill arbeta med AI.",
+    "intent": "ideer",
+    "intent_prediction": {
+      "name": "budget",
+      "confidence": 0.5599030256271362
+    }
+  },
+  {
+    "text": "Mycket.",
+    "intent": "data",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9990338683128357
+    }
+  },
+  {
+    "text": "hall\u00e5",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8914924263954163
+    }
+  },
+  {
+    "text": "tack f\u00f6r allt",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "kompetens",
+      "confidence": 0.6327927112579346
+    }
+  },
+  {
+    "text": "jag f\u00f6rst\u00e5r",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "budget",
+      "confidence": 0.9449175000190735
+    }
+  },
+  {
+    "text": "inte alls",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.9274298548698425
+    }
+  },
+  {
+    "text": "inte",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.9887935519218445
+    }
+  },
+  {
+    "text": "underbar",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "tekniska",
+      "confidence": 0.42257317900657654
+    }
+  },
+  {
+    "text": "Vi har m\u00e5nga AI i ig\u00e5ng.",
+    "intent": "strategi",
+    "intent_prediction": {
+      "name": "data",
+      "confidence": 0.535285472869873
+    }
+  },
+  {
+    "text": "Vi tar upp AI i v\u00e5r verksamhetsplan.",
+    "intent": "ideer",
+    "intent_prediction": {
+      "name": "strategi",
+      "confidence": 0.996374249458313
+    }
+  },
+  {
+    "text": "Vi har kommit p\u00e5 m\u00e5nga saker vi vill g\u00f6ra med AI.",
+    "intent": "budget",
+    "intent_prediction": {
+      "name": "strategi",
+      "confidence": 0.87530118227005
+    }
+  },
+  {
+    "text": "Ett f\u00e5tal.",
+    "intent": "data",
+    "intent_prediction": {
+      "name": "budget",
+      "confidence": 0.6952968239784241
+    }
+  },
+  {
+    "text": "Vi har tillg\u00e5ng till Azure.",
+    "intent": "finaltek",
+    "intent_prediction": {
+      "name": "kompetens",
+      "confidence": 0.7671735882759094
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3825964331626892
+    }
+  },
+  {
+    "text": "ha det bra",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9994844198226929
+    }
+  },
+  {
+    "text": "god natt",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9971421957015991
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.600010335445404
+    }
+  },
+  {
+    "text": "fantastik",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "data",
+      "confidence": 0.6173683404922485
+    }
+  },
+  {
+    "text": "Vi har inga planer p\u00e5 att arbeta med AI.",
+    "intent": "strategi",
+    "intent_prediction": {
+      "name": "ideer",
+      "confidence": 0.5479675531387329
+    }
+  },
+  {
+    "text": "Det finns ett flertal hos oss som \u00e4r bra p\u00e5 AI.",
+    "intent": "data",
+    "intent_prediction": {
+      "name": "budget",
+      "confidence": 0.4998357892036438
+    }
+  },
+  {
+    "text": "hej d\u00e5",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9979795813560486
+    }
+  },
+  {
+    "text": "y",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5647842884063721
+    }
+  },
+  {
     "text": "ja",
     "intent": "affirm",
     "intent_prediction": {
-      "name": "tekniska",
-      "confidence": 0.4490983784198761
+      "name": "deny",
+      "confidence": 0.9493821263313293
     }
   },
   {
-    "text": "Nej.",
+    "text": "jag gillar inte det",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.5164422392845154
+    }
+  },
+  {
+    "text": "k\u00e4nner som en kung",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.6407149434089661
+    }
+  },
+  {
+    "text": "jag k\u00e4nner mycket bra",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.9964123368263245
+    }
+  },
+  {
+    "text": "Vi har medel f\u00f6r att arbeta med AI.",
     "intent": "kompetens",
     "intent_prediction": {
-      "name": "tekniska",
-      "confidence": 0.4637047350406647
-    }
-  },
-  {
-    "text": "Ja",
-    "intent": "tekniska",
-    "intent_prediction": {
-      "name": "kompetens",
-      "confidence": 0.4832935631275177
+      "name": "finaltek",
+      "confidence": 0.6138407588005066
     }
   }
 ]

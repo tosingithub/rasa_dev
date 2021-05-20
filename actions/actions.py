@@ -22,6 +22,6 @@ class ActionHelloWorld(Action):
     def run(self, dispatcher, tracker, domain): #: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         #scoreval = tracker.get_slot("scoreval")
-        dispatcher.utter_message(text="Här är vårt råd: ")
+        dispatcher.utter_message(text="Här är vårt råd: Ni bör få mer expertvägledning")
 
         return []

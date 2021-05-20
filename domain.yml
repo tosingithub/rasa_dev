@@ -15,6 +15,7 @@ intents:
   - data
   - tekniska
   - finaltek
+  - out_of_scope
 
 actions:
   - action_hello_world
@@ -28,10 +29,13 @@ slots:
 
 responses:
   utter_ask_rephrase:
-  - text: "Ursäkta, snälla omformulera eller svara på den sista frågan?"
+  - text: "Ursäkta, snälla omformulera svaret på den sista frågan eller starta konversationen igen."
 
-  #utter_default:
-  #- text: "Sorry I didn't get that. Please, rephrase."
+  utter_out_of_scope:
+  - text: "Tyvärr, det är utanför räckvidden. Säg något annat tack."
+
+  utter_default:
+  - text: "Ursäkta, snälla omformulera svaret på den sista frågan eller starta konversationen igen."
 
   utter_greet:
   - text: "Hej! Jag heter AIA. Hur mår du idag?"
@@ -79,10 +83,10 @@ responses:
 
   utter_data:
   - text: "Sparar ni data över vad ni och era kunder gör kontinuerligt, som kan användas för AI?"
-  - text: Kan ni dela/hämta data från olika delar (CRM, produktionssystem osv.) av verksamheten för att exempelvis användas till ML. 
-  - text: Har ni kompetens för att kunna säkerställa kvalité eller tvätta och strukturera data?
-  - text: Använder ni enhetliga strukturer  för data i olika delar av verksamheten så de enklare kan samköras för att hitta insikter?
-  - text: Finns det automatiserade processer att bearbeta data så de kan användas för AI?
+  - text: "Kan ni dela/hämta data från olika delar (CRM, produktionssystem osv.) av verksamheten för att exempelvis användas till ML."
+  - text: "Har ni kompetens för att kunna säkerställa kvalité eller tvätta och strukturera data?"
+  - text: "Använder ni enhetliga strukturer  för data i olika delar av verksamheten så de enklare kan samköras för att hitta insikter?"
+  - text: "Finns det automatiserade processer att bearbeta data så de kan användas för AI?"
 
   utter_tekniska:
   - text: "Till vilken grad har ni tekniska förutsättning för att arbeta med AI? Har ni dessa internt eller exempelvis via leverantörer/partners? Har ni exempelvis verktyg för att arbeta med ML?"
