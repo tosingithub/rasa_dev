@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: greet
   examples: |
@@ -16,7 +15,6 @@ nlu:
     - godkväll
     - god dag
     - hej vän
-
 - intent: goodbye
   examples: |
     - hej då
@@ -30,7 +28,6 @@ nlu:
     - vi hörs
     - tack för allt
     - vi hörs snart
-
 - intent: affirm
   examples: |
     - yes
@@ -40,7 +37,6 @@ nlu:
     - självklart
     - jag förstår
     - den är bra
-
 - intent: deny
   examples: |
     - no
@@ -52,7 +48,6 @@ nlu:
     - inte alls
     - ej
     - inte
-
 - intent: mood_great
   examples: |
     - perfekt
@@ -73,7 +68,6 @@ nlu:
     - kul
     - jättebra
     - jag heter
-
 - intent: mood_unhappy
   examples: |
     - mitt dag var dålig
@@ -90,22 +84,12 @@ nlu:
     - det är inte bra
     - dålig dag
     - det är en dålig dag
-
 - intent: bot_challenge
   examples: |
     - är du människa?
     - är du en bot?
     - tala jag med en bot?
     - tala jag med en människa?
-
-# NEW INTENTS DEFINED:
-# This intent is not needed to be defined because it fires immediately after "utter_happy" of intent "mood_great"
-#- intent: implementation
-#  examples: |
-#    - vad är AI?
-
-# Now, use user-responses to previous question (implementation - in this case) to trigger the next intent (strategi - in this case)
-# 1-9= 0;1,2,3,4,5
 - intent: strategi
   examples: |
     - Vi planerar inte att genomföra projekt.
@@ -147,8 +131,7 @@ nlu:
     - Vi har många AI i igång.
     - AI finns på många ställen i verksamheten.
     - AI är integrerat i flera delar av verksamheten.
-
-
+    - vi har prövat AI
 - intent: ideer
   examples: |
     - Vi har ingen strategi.
@@ -172,8 +155,7 @@ nlu:
     - AI finns i vår strategi.
     - Vi tar upp AI i vår strategi.
     - Vi tar upp AI i vår verksamhetsplan.
-
-
+    - det finns en plan
 - intent: budget
   examples: |
     - Vi har inga idéer om hur vi kan arbeta med AI i verksamheten för att leverera affärsnytta.
@@ -200,7 +182,7 @@ nlu:
     - Det finns flera idéer som vi arbetar med.
     - Hur många idéer som helst.
     - Vi har ett stort antal idéer.
-
+    - vi har få ideer
 - intent: kompetens
   examples: |
     - Vi har ingen budget.
@@ -220,7 +202,7 @@ nlu:
     - Vi har avsatt pengar för AI.
     - Vi har avsatt medel för AI.
     - Vi har resurser till AI.
-
+    - vi har ingen budget
 - intent: data
   examples: |
     - Vi har ingen kompetens.
@@ -245,12 +227,12 @@ nlu:
     - Det finns ett flertal hos oss som är bra på AI.
     - Många.
     - Mycket.
-
+    - ett fåtal
 - intent: tekniska
   examples: |
     - Ja, vi kan.
     - Nej, vi använda inte.
-
+    - /tekniska
 - intent: finaltek
   examples: |
     - Vi har ingen teknik för att nyttja AI.
@@ -267,3 +249,11 @@ nlu:
     - Vi har teknik internt inom organisationen för att nyttja AI.
     - Vi har teknik i företaget för att köra AI.
     - Vi har teknik i företaget för att köra ML.
+    - vi har tillgång till azure
+- intent: nlu_fallback
+  examples: |
+    - jag var myte
+    - ja vi kan
+- intent: out_of_scope
+  examples: |
+    - /out_of_scope
